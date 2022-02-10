@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primary-orange:#f9ab00;
+  --primar-dark:rgba(255,255,255,0)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+font-family:"Roboto Condensed" sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* *********************************My code**************/
+
+.logo{
+  width: 6.25rem;
+  /* height: 16 rem; */
+  padding-top: 0%;
+  padding-bottom: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+
+
+}
+
+nav a.nav-link{
+  font-family:sans-serif;
+  /* font-weight: 500; */
+  /* font-size:xx-large; */
+  /* letter-spacing: 0.00375rem; */
+  cursor: pointer;
+  /* font-synthesis: none; */
+  /* text: combine upright 10px; ; */
+  /* font: 1em sans-serif; */
+  word-spacing: 2%;
+  /* text-shadow: #61dafb; */
+  /* text-transform: uppercase; */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* nav */
+  .navbar-nav > li > a {
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+    padding: 0 !important;
+    border-top: .1875rem solid var(--primar-dark);
+    color: var(--primary-white) !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-brand{
+  max-width: 17.25rem !important;
+  /* height: 6rem !important; */
+  padding: 0 !important;
+
+}
+
+.navbar-nav >li >a.active ,.navbar-nav >li> a.active:focus{
+  border-top: .1875rem solid var(--primary-orange) ;
+}
+
+.navbar-nav >li >a:hover {
+  border-top: .1875rem solid var(--primary-orange) ;
+
 }
